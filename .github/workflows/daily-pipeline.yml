@@ -1,0 +1,30 @@
+name: Daily TSX market data pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 21:30 UTC is after the normal Toronto close in daylight and standard time.
+    - cron: '30 21 * * 1-5'
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run pipeline
+        run: python run_pipeline.py
+      - name: Build report and workbook
+        run: python scripts/build_deliverables.py
+      - name: Upload run outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: tsx-pipeline-latest-run
+          path: |
+            data/outputs/
+            reports/
+            charts/
