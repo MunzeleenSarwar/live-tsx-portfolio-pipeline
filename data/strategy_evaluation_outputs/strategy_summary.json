@@ -1,0 +1,92 @@
+{
+  "strategy": "Monthly 12-1 momentum, top 3 of 10 TSX stocks, equal weight",
+  "evaluation_start": "2017-08-31 00:00:00",
+  "evaluation_end": "2026-10-30 00:00:00",
+  "months": 111,
+  "decision": "DO NOT TRADE",
+  "payoff": {
+    "trades": 333,
+    "win_probability": 0.5615615615615616,
+    "average_win": 0.09097326559755685,
+    "average_loss": -0.06250745841374675,
+    "reward_risk": 1.4553985701256709,
+    "expected_value_R": 0.3788574552957972,
+    "expected_return_per_trade": 0.023681416631639956,
+    "break_even_probability": 0.4072658558031247,
+    "margin_above_breakeven": 0.15429570575843687
+  },
+  "strategy_metrics": {
+    "months": 111,
+    "total_return": 8.586683142711767,
+    "annualised_return": 0.27681010352759516,
+    "annualised_volatility": 0.26001358543475916,
+    "sharpe": 0.9978566251649169,
+    "t_statistic": 3.2688026263273127,
+    "max_drawdown": -0.2795568598393483,
+    "hit_rate": 0.6486486486486487,
+    "best_month": 0.3372903860572358,
+    "worst_month": -0.25985248461167154,
+    "monthly_cvar95": -0.12665371386959398
+  },
+  "benchmark_metrics": {
+    "months": 111,
+    "total_return": 1.3521041694153588,
+    "annualised_return": 0.09687582565739361,
+    "annualised_volatility": 0.1354475774053687,
+    "sharpe": 0.6061292085009834,
+    "t_statistic": 2.2925561264628045,
+    "max_drawdown": -0.2274850706072986,
+    "hit_rate": 0.6666666666666666,
+    "best_month": 0.10478521325461632,
+    "worst_month": -0.1773524035371966,
+    "monthly_cvar95": -0.08387850623624306
+  },
+  "equal_weight_metrics": {
+    "months": 111,
+    "total_return": 5.657623080820515,
+    "annualised_return": 0.22746037623993698,
+    "annualised_volatility": 0.16052796449981643,
+    "sharpe": 1.2413458337423084,
+    "t_statistic": 4.154328260946731,
+    "max_drawdown": -0.19215887468681392,
+    "hit_rate": 0.6576576576576577,
+    "best_month": 0.18383394785889506,
+    "worst_month": -0.1549326709411744,
+    "monthly_cvar95": -0.0805571209807102
+  },
+  "bootstrap_summary": {
+    "iid_probability_profitable": 0.9984,
+    "iid_probability_beats_benchmark": 0.9672,
+    "iid_median_annualised_return": 0.2769343687420621,
+    "iid_p05_annualised_return": 0.11460834658410457,
+    "iid_p95_annualised_return": 0.46269478385725954,
+    "block_probability_profitable": 1.0,
+    "block_probability_beats_benchmark": 0.9954,
+    "block_median_annualised_return": 0.2746118584605515
+  },
+  "placebo_summary": {
+    "trials": 500,
+    "actual_total_return_percentile": 92.4,
+    "actual_sharpe_percentile": 74.4,
+    "placebo_median_annualised_return": 0.19574844543029946,
+    "placebo_median_sharpe": 0.8571995268509464
+  },
+  "current_formation_date": "2026-10-30",
+  "current_picks": [
+    "CNQ.TO",
+    "TD.TO",
+    "TIH.TO"
+  ],
+  "current_scores": {
+    "CNQ.TO": 0.5678816433443952,
+    "TD.TO": 0.5529042045035437,
+    "TIH.TO": 0.48558315238787064,
+    "ABX.TO": 0.2925028769812448,
+    "L.TO": 0.16643600759551047,
+    "CCO.TO": 0.05838490056688128,
+    "SHOP.TO": 0.020119964077343733,
+    "ENB.TO": -0.00588301187735496,
+    "CAE.TO": -0.16937635761477832,
+    "BN.TO": -0.17909050898741186
+  }
+}

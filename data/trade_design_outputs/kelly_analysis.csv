@@ -1,0 +1,4 @@
+method,kelly_multiple,capital_risk_fraction,implied_position_fraction
+Quarter Kelly,0.25,0.06731731731731731,1.399737178313536
+Half Kelly,0.5,0.13463463463463463,2.799474356627072
+Full Kelly,1.0,0.26926926926926925,5.598948713254144

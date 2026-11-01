@@ -1,0 +1,56 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<title>Exploring a Portfolio Risk Surface: ENB and TD</title><style>
+body{font-family:Arial,sans-serif;margin:32px;color:#111;background:#fff;max-width:1180px}
+h1{font-size:28px;margin-bottom:4px} .sub{color:#555;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}
+.card{border:1px solid #ddd;border-radius:8px;padding:14px} .label{color:#666;font-size:12px;text-transform:uppercase}
+.value{font-size:22px;font-weight:700;margin-top:5px} img{max-width:100%;border:1px solid #e2e2e2;border-radius:8px;margin:10px 0}
+table{border-collapse:collapse;width:100%;margin:14px 0} th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;font-size:13px}
+th{background:#12395B;color:#fff} .note{background:#f4f4f4;border-radius:8px;padding:14px;line-height:1.5}
+</style></head><body><h1>Exploring a Portfolio Risk Surface: ENB and TD</h1><div class='sub'>Multivariable calculus on portfolio value and volatility, last 252 trading days</div>
+<div class='grid'><div class='card'><div class='label'>ENB volatility</div><div class='value'>17.4%</div></div><div class='card'><div class='label'>TD volatility</div><div class='value'>17.1%</div></div><div class='card'><div class='label'>Correlation</div><div class='value'>0.019</div></div><div class='card'><div class='label'>Safest ENB weight</div><div class='value'>49.0%</div></div><div class='card'><div class='label'>Minimum volatility</div><div class='value'>12.3%</div></div><div class='card'><div class='label'>Surface shape</div><div class='value'>Saddle in weight and correlation</div></div></div><img src='../charts/risk_surface/value_surface.png' alt='value_surface.png'><img src='../charts/risk_surface/risk_surface.png' alt='risk_surface.png'><img src='../charts/risk_surface/correlation_scenarios.png' alt='correlation_scenarios.png'><img src='../charts/risk_surface/taylor_errors.png' alt='taylor_errors.png'><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>scenario</th>
+      <th>exact_pnl</th>
+      <th>exact_pnl_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Both fall 10%</td>
+      <td>-10000.00</td>
+      <td>-0.10</td>
+    </tr>
+    <tr>
+      <td>ENB falls 10%, TD falls 5%</td>
+      <td>-7451.76</td>
+      <td>-0.07</td>
+    </tr>
+    <tr>
+      <td>ENB falls 10%, TD rises 10%</td>
+      <td>192.97</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>ENB rises 10%, TD falls 10%</td>
+      <td>-192.97</td>
+      <td>-0.00</td>
+    </tr>
+    <tr>
+      <td>Both rise 10%</td>
+      <td>10000.00</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>ENB falls 20%, TD rises 5%</td>
+      <td>-7258.79</td>
+      <td>-0.07</td>
+    </tr>
+    <tr>
+      <td>ENB rises 5%, TD falls 20%</td>
+      <td>-7741.21</td>
+      <td>-0.08</td>
+    </tr>
+  </tbody>
+</table><div class='note'>Portfolio value is linear in the two prices, so first-order approximations are exact and its Hessian is zero. Volatility is not linear. At the safest weight its gradient in the weight direction is zero, correlation raises risk, and the Hessian is indefinite, which makes the joint surface a saddle. Correlation changes the level of risk far more than the safest weight for this pair.</div></body></html>

@@ -1,0 +1,7 @@
+criterion,value,hurdle,passed
+Positive expected value per trade lot,0.3788574552957972,0.0,True
+Monthly mean return t-statistic at least 2,3.2688026263273127,2.0,True
+Bootstrap probability of beating the benchmark at least 80%,0.9672,0.8,True
+Sharpe ratio at least equal to the equal-weight universe,0.9978566251649169,1.2413458337423084,False
+Maximum drawdown no worse than 25%,-0.2795568598393483,-0.25,False
+Point-in-time universe with no selection bias,0.0,1.0,False

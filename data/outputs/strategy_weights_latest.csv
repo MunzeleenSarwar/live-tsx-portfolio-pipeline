@@ -1,0 +1,41 @@
+strategy,symbol,short,company,sector,weight
+Equal Weight,ABX.TO,ABX,Barrick Mining,Materials,0.1
+Equal Weight,BN.TO,BN,Brookfield Corp,Financials,0.1
+Equal Weight,CAE.TO,CAE,CAE,Industrials,0.1
+Equal Weight,CCO.TO,CCO,Cameco,Energy,0.1
+Equal Weight,CNQ.TO,CNQ,Canadian Natural Resources,Energy,0.1
+Equal Weight,ENB.TO,ENB,Enbridge,Energy,0.1
+Equal Weight,L.TO,L,Loblaw,Consumer Staples,0.1
+Equal Weight,SHOP.TO,SHOP,Shopify,Technology,0.1
+Equal Weight,TD.TO,TD,TD Bank,Financials,0.1
+Equal Weight,TIH.TO,TIH,Toromont,Industrials,0.1
+Minimum CVaR (latest window),ABX.TO,ABX,Barrick Mining,Materials,0.018304205284485457
+Minimum CVaR (latest window),BN.TO,BN,Brookfield Corp,Financials,0.04459304867755281
+Minimum CVaR (latest window),CAE.TO,CAE,CAE,Industrials,3.182258443875347e-18
+Minimum CVaR (latest window),CCO.TO,CCO,Cameco,Energy,4.945454181295133e-18
+Minimum CVaR (latest window),CNQ.TO,CNQ,Canadian Natural Resources,Energy,0.198752414175949
+Minimum CVaR (latest window),ENB.TO,ENB,Enbridge,Energy,0.151510077102816
+Minimum CVaR (latest window),L.TO,L,Loblaw,Consumer Staples,0.2
+Minimum CVaR (latest window),SHOP.TO,SHOP,Shopify,Technology,0.020089864670024438
+Minimum CVaR (latest window),TD.TO,TD,TD Bank,Financials,0.2
+Minimum CVaR (latest window),TIH.TO,TIH,Toromont,Industrials,0.16675039008917225
+Minimum Variance,ABX.TO,ABX,Barrick Mining,Materials,0.05122056196451291
+Minimum Variance,BN.TO,BN,Brookfield Corp,Financials,0.009758505769809593
+Minimum Variance,CAE.TO,CAE,CAE,Industrials,0.07108790943856474
+Minimum Variance,CCO.TO,CCO,Cameco,Energy,0.021378094857438322
+Minimum Variance,CNQ.TO,CNQ,Canadian Natural Resources,Energy,0.13753706657983222
+Minimum Variance,ENB.TO,ENB,Enbridge,Energy,0.18037422227535116
+Minimum Variance,L.TO,L,Loblaw,Consumer Staples,0.2
+Minimum Variance,SHOP.TO,SHOP,Shopify,Technology,0.01867693055152977
+Minimum Variance,TD.TO,TD,TD Bank,Financials,0.2
+Minimum Variance,TIH.TO,TIH,Toromont,Industrials,0.1099667085629613
+Risk Parity,ABX.TO,ABX,Barrick Mining,Materials,0.06654967564035706
+Risk Parity,BN.TO,BN,Brookfield Corp,Financials,0.06783999300491443
+Risk Parity,CAE.TO,CAE,CAE,Industrials,0.07253255972858003
+Risk Parity,CCO.TO,CCO,Cameco,Energy,0.05247147016945287
+Risk Parity,CNQ.TO,CNQ,Canadian Natural Resources,Energy,0.14435585754426
+Risk Parity,ENB.TO,ENB,Enbridge,Energy,0.14446466440396952
+Risk Parity,L.TO,L,Loblaw,Consumer Staples,0.16962948379999362
+Risk Parity,SHOP.TO,SHOP,Shopify,Technology,0.04174663779987448
+Risk Parity,TD.TO,TD,TD Bank,Financials,0.1387265439421378
+Risk Parity,TIH.TO,TIH,Toromont,Industrials,0.10168311396646026

@@ -1,0 +1,12 @@
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.6
+yfinance>=0.2.40
+pyarrow>=14.0
+openpyxl>=3.1
+reportlab>=4.0
+PyYAML>=6.0
+pytest>=8.0
+nbformat>=5.9
+pypdf>=4.0

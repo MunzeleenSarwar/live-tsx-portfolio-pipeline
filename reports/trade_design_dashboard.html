@@ -1,0 +1,52 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<title>Designing an Optimal Trade: Long CNQ</title><style>
+body{font-family:Arial,sans-serif;margin:32px;color:#111;background:#fff;max-width:1180px}
+h1{font-size:28px;margin-bottom:4px} .sub{color:#555;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}
+.card{border:1px solid #ddd;border-radius:8px;padding:14px} .label{color:#666;font-size:12px;text-transform:uppercase}
+.value{font-size:22px;font-weight:700;margin-top:5px} img{max-width:100%;border:1px solid #e2e2e2;border-radius:8px;margin:10px 0}
+table{border-collapse:collapse;width:100%;margin:14px 0} th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;font-size:13px}
+th{background:#12395B;color:#fff} .note{background:#f4f4f4;border-radius:8px;padding:14px;line-height:1.5}
+</style></head><body><h1>Designing an Optimal Trade: Long CNQ</h1><div class='sub'>Single-variable calculus applied to size, leverage, stop placement and execution, 30 Oct 2026</div>
+<div class='grid'><div class='card'><div class='label'>Entry</div><div class='value'>$78</div></div><div class='card'><div class='label'>Stop</div><div class='value'>$75</div></div><div class='card'><div class='label'>Target</div><div class='value'>$84</div></div><div class='card'><div class='label'>Final size</div><div class='value'>2,551 shares</div></div><div class='card'><div class='label'>Risk at stop</div><div class='value'>$9,617</div></div><div class='card'><div class='label'>Expected profit</div><div class='value'>$3,485</div></div></div><img src='../charts/trade_design/profit_by_size.png' alt='profit_by_size.png'><img src='../charts/trade_design/leverage.png' alt='leverage.png'><img src='../charts/trade_design/trade_levels.png' alt='trade_levels.png'><img src='../charts/trade_design/execution.png' alt='execution.png'><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>stop_atr_multiple</th>
+      <th>stop_price</th>
+      <th>target_price</th>
+      <th>dollar_risk_at_quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>76.51</td>
+      <td>81.22</td>
+      <td>4808.63</td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+      <td>75.56</td>
+      <td>82.63</td>
+      <td>7212.95</td>
+    </tr>
+    <tr>
+      <td>2.0</td>
+      <td>74.62</td>
+      <td>84.04</td>
+      <td>9617.26</td>
+    </tr>
+    <tr>
+      <td>2.5</td>
+      <td>73.68</td>
+      <td>85.46</td>
+      <td>12021.58</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>72.74</td>
+      <td>86.87</td>
+      <td>14425.89</td>
+    </tr>
+  </tbody>
+</table><div class='note'>The impact-only optimum is more than 300,000 shares, which shows that market impact cannot size a trade on a liquid stock. A risk penalty lowers the optimum to about 4,300 shares, and the 20% position cap sets the final size at 2,551 shares. Full Kelly is rejected: it would risk 26.9% of capital. The companion strategy evaluation says DO NOT TRADE with live capital, so this plan is a paper-trade design.</div></body></html>

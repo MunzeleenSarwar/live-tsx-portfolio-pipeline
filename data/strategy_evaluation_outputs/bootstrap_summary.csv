@@ -1,0 +1,2 @@
+iid_probability_profitable,iid_probability_beats_benchmark,iid_median_annualised_return,iid_p05_annualised_return,iid_p95_annualised_return,block_probability_profitable,block_probability_beats_benchmark,block_median_annualised_return
+0.9984,0.9672,0.2769343687420621,0.11460834658410457,0.46269478385725954,1.0,0.9954,0.2746118584605515

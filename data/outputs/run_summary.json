@@ -1,0 +1,24 @@
+{
+  "project": "Live TSX Portfolio Market Data Pipeline",
+  "run_started_at": "2026-10-30T20:29:06.626062+00:00",
+  "completed_at": "2026-10-30T20:29:14.947466+00:00",
+  "elapsed_seconds": 8.32,
+  "source": "Yahoo Finance",
+  "feed_description": "Production-style near-live polling feed, not a direct exchange tick feed.",
+  "daily_start_requested": "2016-06-01",
+  "latest_daily_date": "2026-10-30",
+  "daily_raw_rows": 28754,
+  "daily_clean_rows": 28754,
+  "intraday_raw_rows": 1426,
+  "intraday_clean_rows": 1426,
+  "quarantined_rows": 0,
+  "gap_groups": 0,
+  "filled_sessions": 0,
+  "outliers_flagged": 720,
+  "corporate_actions": 328,
+  "quality_status_counts": {
+    "warning": 11
+  },
+  "strategy_estimation_start": "2024-11-08 00:00:00",
+  "strategy_estimation_end": "2026-10-30 00:00:00"
+}

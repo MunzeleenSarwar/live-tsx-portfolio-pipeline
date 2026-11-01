@@ -1,0 +1,48 @@
+{
+  "asset_a": "ENB.TO",
+  "asset_b": "TD.TO",
+  "window_start": "2025-10-30",
+  "window_end": "2026-10-30",
+  "observations": 252,
+  "capital": 100000.0,
+  "price_a": 69.11000061035156,
+  "price_b": 174.0399932861328,
+  "vol_a": 0.17443764372085008,
+  "vol_b": 0.17116509346762593,
+  "correlation": 0.01866758652567252,
+  "base_weight_a": 0.49035166027788596,
+  "base_weight_b": 0.5096483397221141,
+  "allocation_a": 49035.1660277886,
+  "allocation_b": 50964.83397221141,
+  "shares_a": 709.5234494968869,
+  "shares_b": 292.83403779740433,
+  "base_value": 100000.0,
+  "base_volatility": 0.12330743709430836,
+  "value_gradient_per_price": [
+    709.5234494968869,
+    292.83403779740433
+  ],
+  "value_gradient_per_shock_fraction": [
+    49035.1660277886,
+    50964.83397221141
+  ],
+  "risk_gradient": [
+    0.0,
+    0.06051240389742806
+  ],
+  "risk_hessian": [
+    [
+      0.47532607572176033,
+      0.004672493295054814
+    ],
+    [
+      0.004672493295054814,
+      -0.02969610946035317
+    ]
+  ],
+  "risk_hessian_eigenvalues": [
+    -0.029739335927833944,
+    0.47536930218924106
+  ],
+  "risk_hessian_classification": "indefinite: saddle-shaped"
+}

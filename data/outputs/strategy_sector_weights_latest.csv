@@ -1,0 +1,25 @@
+strategy,sector,sector_weight
+Equal Weight,Consumer Staples,0.1
+Equal Weight,Energy,0.30000000000000004
+Equal Weight,Financials,0.2
+Equal Weight,Industrials,0.2
+Equal Weight,Materials,0.1
+Equal Weight,Technology,0.1
+Minimum CVaR (latest window),Consumer Staples,0.2
+Minimum CVaR (latest window),Energy,0.350262491278765
+Minimum CVaR (latest window),Financials,0.24459304867755283
+Minimum CVaR (latest window),Industrials,0.16675039008917225
+Minimum CVaR (latest window),Materials,0.018304205284485457
+Minimum CVaR (latest window),Technology,0.020089864670024438
+Minimum Variance,Consumer Staples,0.2
+Minimum Variance,Energy,0.3392893837126217
+Minimum Variance,Financials,0.20975850576980962
+Minimum Variance,Industrials,0.18105461800152606
+Minimum Variance,Materials,0.05122056196451291
+Minimum Variance,Technology,0.01867693055152977
+Risk Parity,Consumer Staples,0.16962948379999362
+Risk Parity,Energy,0.3412919921176824
+Risk Parity,Financials,0.20656653694705224
+Risk Parity,Industrials,0.1742156736950403
+Risk Parity,Materials,0.06654967564035706
+Risk Parity,Technology,0.04174663779987448

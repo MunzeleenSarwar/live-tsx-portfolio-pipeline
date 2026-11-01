@@ -1,0 +1,2 @@
+trades,win_probability,average_win,average_loss,reward_risk,expected_value_R,expected_return_per_trade,break_even_probability,margin_above_breakeven
+333,0.5615615615615616,0.09097326559755685,-0.06250745841374675,1.4553985701256709,0.3788574552957972,0.023681416631639956,0.4072658558031247,0.15429570575843687

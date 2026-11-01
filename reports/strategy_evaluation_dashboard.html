@@ -1,0 +1,58 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'>
+<title>Is This Trading Strategy Actually Profitable?</title><style>
+body{font-family:Arial,sans-serif;margin:32px;color:#111;background:#fff;max-width:1180px}
+h1{font-size:28px;margin-bottom:4px} .sub{color:#555;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}
+.card{border:1px solid #ddd;border-radius:8px;padding:14px} .label{color:#666;font-size:12px;text-transform:uppercase}
+.value{font-size:22px;font-weight:700;margin-top:5px} img{max-width:100%;border:1px solid #e2e2e2;border-radius:8px;margin:10px 0}
+table{border-collapse:collapse;width:100%;margin:14px 0} th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;font-size:13px}
+th{background:#12395B;color:#fff} .note{background:#f4f4f4;border-radius:8px;padding:14px;line-height:1.5}
+</style></head><body><h1>Is This Trading Strategy Actually Profitable?</h1><div class='sub'>Monthly 12-1 momentum, top 3 of 10 TSX stocks, Aug 2017 to Oct 2026, 10 bps costs</div>
+<div class='grid'><div class='card'><div class='label'>Decision</div><div class='value'>DO NOT TRADE</div></div><div class='card'><div class='label'>Annualised return</div><div class='value'>27.7%</div></div><div class='card'><div class='label'>Sharpe</div><div class='value'>1.00</div></div><div class='card'><div class='label'>t-statistic</div><div class='value'>3.27</div></div><div class='card'><div class='label'>Max drawdown</div><div class='value'>-28.0%</div></div><div class='card'><div class='label'>Expected value</div><div class='value'>+0.38R</div></div></div><img src='../charts/strategy_evaluation/growth.png' alt='growth.png'><img src='../charts/strategy_evaluation/bootstrap.png' alt='bootstrap.png'><img src='../charts/strategy_evaluation/ev_heatmap.png' alt='ev_heatmap.png'><img src='../charts/strategy_evaluation/stress.png' alt='stress.png'><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>criterion</th>
+      <th>value</th>
+      <th>hurdle</th>
+      <th>passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positive expected value per trade lot</td>
+      <td>0.379</td>
+      <td>0.000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Monthly mean return t-statistic at least 2</td>
+      <td>3.269</td>
+      <td>2.000</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Bootstrap probability of beating the benchmark at least 80%</td>
+      <td>0.967</td>
+      <td>0.800</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Sharpe ratio at least equal to the equal-weight universe</td>
+      <td>0.998</td>
+      <td>1.241</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Maximum drawdown no worse than 25%</td>
+      <td>-0.280</td>
+      <td>-0.250</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Point-in-time universe with no selection bias</td>
+      <td>0.000</td>
+      <td>1.000</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table><div class='note'>The strategy was profitable in this sample and beat the benchmark in most bootstrap paths. It still fails the decision rule: its Sharpe ratio is below simply holding the same ten stocks in equal weight, its drawdown breaches the 25% limit, and the stock universe was selected in 2026, so the test is not point-in-time. Verdict: research and paper trading only.</div></body></html>

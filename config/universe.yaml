@@ -1,0 +1,36 @@
+project:
+  name: Live TSX Portfolio Market Data Pipeline
+  timezone: America/Toronto
+  currency: CAD
+  source: Yahoo Finance
+  feed_description: Production-style near-live polling feed, not a direct exchange tick feed.
+
+history:
+  daily_start: '2016-06-01'
+  weekly_estimation_weeks: 104
+  outlier_threshold: 3.5
+  extreme_outlier_threshold: 10.0
+  max_forward_fill_sessions: 5
+
+symbols:
+  CNQ.TO: {short: CNQ, name: Canadian Natural Resources, sector: Energy}
+  ENB.TO: {short: ENB, name: Enbridge, sector: Energy}
+  CCO.TO: {short: CCO, name: Cameco, sector: Energy}
+  TD.TO: {short: TD, name: TD Bank, sector: Financials}
+  BN.TO: {short: BN, name: Brookfield Corp, sector: Financials}
+  SHOP.TO: {short: SHOP, name: Shopify, sector: Technology}
+  TIH.TO: {short: TIH, name: Toromont, sector: Industrials}
+  ABX.TO: {short: ABX, name: Barrick Mining, sector: Materials}
+  L.TO: {short: L, name: Loblaw, sector: Consumer Staples}
+  CAE.TO: {short: CAE, name: CAE, sector: Industrials}
+
+benchmark:
+  symbol: ^GSPTSE
+  short: TSX
+  name: S&P/TSX Composite
+
+strategy_rules:
+  long_only: true
+  position_cap: 0.20
+  sector_cap: 0.40
+  risk_free_rate: 0.02
