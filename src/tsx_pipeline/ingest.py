@@ -139,10 +139,12 @@ def write_raw(daily: pd.DataFrame, intraday: pd.DataFrame, root: Path = PROJECT_
     intraday_dir = root / "data" / "raw" / "intraday"
     daily_dir.mkdir(parents=True, exist_ok=True)
     intraday_dir.mkdir(parents=True, exist_ok=True)
+    bronze_dir = root / "data" / "bronze"
+    bronze_dir.mkdir(parents=True, exist_ok=True)
     for symbol, frame in daily.groupby("symbol"):
         frame.to_parquet(daily_dir / f"{symbol.replace('^', '')}.parquet", index=False)
     for symbol, frame in intraday.groupby("symbol"):
         frame.to_parquet(intraday_dir / f"{symbol.replace('^', '')}.parquet", index=False)
-    daily.to_csv(root / "data" / "bronze" / "daily_ohlcv_raw.csv.gz", index=False, compression="gzip")
+    daily.to_csv(bronze_dir / "daily_ohlcv_raw.csv.gz", index=False, compression="gzip")
     if not intraday.empty:
-        intraday.to_csv(root / "data" / "bronze" / "intraday_15m_raw.csv.gz", index=False, compression="gzip")
+        intraday.to_csv(bronze_dir / "intraday_15m_raw.csv.gz", index=False, compression="gzip")

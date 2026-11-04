@@ -100,6 +100,7 @@ def main() -> int:
         intraday_clean = intraday
 
     features = build_daily_features(filled_matrix)
+    (ROOT / "data" / "features").mkdir(parents=True, exist_ok=True)
     features.to_parquet(ROOT / "data" / "features" / "daily_features.parquet", index=False)
     weekly = build_weekly_prices(filled_matrix)
     weekly.to_parquet(ROOT / "data" / "features" / "weekly_adjusted_prices.parquet")
